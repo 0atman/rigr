@@ -6,7 +6,7 @@ use std::{thread, time::Duration};
 use progressive::progress;
 
 fn main() {
-    println!("Rigging...");
+    println!("Scanning...");
     for n in progress(14_000..14_301) {
         freq(n * 1000);
         thread::sleep(Duration::from_millis(500));
